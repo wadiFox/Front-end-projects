@@ -27,3 +27,26 @@ function toggleDropdown(triggerSelector, menuSelector) {
 
 // Utilisation de la fonction pour votre menu utilisateur
 toggleDropdown('.fa-caret-down', '.drop');
+
+// --- Dark Mode Switch ---
+const darkModeBtn = document.querySelector('.dark-mode-btn');
+
+darkModeBtn.addEventListener('click', () => {
+    // Ajoute la classe 'on' au bouton lui-même
+    darkModeBtn.classList.toggle('on');
+    // Ajoute la classe 'dark-theme' au body
+    document.body.classList.toggle('dark-theme');
+
+    // Sauvegarde le choix de l'utilisateur dans le localStorage
+    if (document.body.classList.contains('dark-theme')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+});
+
+// Vérifie le thème sauvegardé au chargement de la page
+if (localStorage.getItem('theme') === 'dark') {
+    darkModeBtn.classList.add('on');
+    document.body.classList.add('dark-theme');
+}

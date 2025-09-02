@@ -59,6 +59,84 @@ nav{
     border-radius: 50%;
     cursor: pointer;
 }
+
+/* --- Dark Mode Button --- */
+.dark-mode-btn {
+    width: 45px;
+    height: 22px;
+    background: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.dark-mode-btn span {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 2px;
+    transition: left 0.3s ease;
+}
+
+.dark-mode-btn.on span {
+    left: 25px;
+}
+
+/* --- Dark Theme Styles --- */
+body.dark-theme {
+    background: #0a0a0a;
+    color: #e0e0e0;
+}
+
+body.dark-theme nav {
+    background: #181818;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-theme .drop,
+body.dark-theme .left-sidebar,
+body.dark-theme .right-sidebar,
+body.dark-theme .write-content-post,
+body.dark-theme .post-container {
+    background: #181818;
+    color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-theme .drop hr {
+    border-top: 1px solid #333;
+}
+
+body.dark-theme .user-profile p,
+body.dark-theme .right-drop p {
+    color: #e0e0e0;
+}
+
+body.dark-theme .imp-links a,
+body.dark-theme .shortcut-links a,
+body.dark-theme .sidebar-title a,
+body.dark-theme .event a,
+body.dark-theme .post-text,
+body.dark-theme .post-text a,
+body.dark-theme .shortcut-links p {
+    color: #b0b0b0;
+}
+
+body.dark-theme .nav-right .search-box {
+    background: #333;
+}
+
+body.dark-theme .nav-right .search-box input {
+    background: transparent;
+    color: #fff;
+}
+
 .drop{
     overflow: hidden;
     max-height: 0; /* Cache le menu par défaut */   
