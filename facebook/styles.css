@@ -59,6 +59,61 @@ nav{
     border-radius: 50%;
     cursor: pointer;
 }
+.drop{
+    overflow: hidden;
+    max-height: 0; /* Cache le menu par défaut */   
+    opacity: 0;
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out; /* Ajoute la transition */
+    position: absolute;
+    top: 60px;
+    width: 350px;
+    right: 5%;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding:20px;
+    color: #626262;
+    z-index: 10;
+}
+
+.fa-caret-down{
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left:5px;
+}
+.drop hr{
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+    background: #9a9a9a;
+}
+.drop-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 20px 0;
+    align-items: center;
+}
+.drop img{
+    width: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.right-drop{
+    flex-basis: 65%;
+    margin-right: 50px;
+    overflow-y: auto;
+}
+.right-drop a{
+    text-decoration: none;
+    display: block;
+}
+
+.drop-flex a{
+    text-decoration: none;
+    color: #1867f2;
+    font-size: 12px;
+}
 .online{
     position: relative;
 }
@@ -367,3 +422,37 @@ nav{
     border-radius: 50%;
     margin-right: 5px;
 }
+.settings-links {
+    display: flex;
+    align-items: center;
+    color: #626262;
+    margin-bottom: 20px;
+}
+.settings-links img{
+    width: 38px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.settings-links a{
+    text-decoration: none;
+    color: #1867f2;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex:1;
+}
+.settings-links a img{
+    width: 10px;
+    cursor: pointer;
+}
+.footer{
+    text-align: center;
+    padding: 15px 0;
+    background: #fff;
+    color: #626262;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
