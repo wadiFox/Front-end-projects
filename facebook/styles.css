@@ -103,7 +103,8 @@ body.dark-theme .drop,
 body.dark-theme .left-sidebar,
 body.dark-theme .right-sidebar,
 body.dark-theme .write-content-post,
-body.dark-theme .post-container {
+body.dark-theme .post-container,
+body.dark-theme .profile-details {
     background: #181818;
     color: #e0e0e0;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
@@ -532,5 +533,36 @@ body.dark-theme .nav-right .search-box input {
     font-size: 14px;
     margin-top: 20px;
     padding: 30px;
+}
+
+/* -------------------------- Profile Page ------------------ */
+
+.prof-container{
+    padding: 20px 15%;
+    color: #626262;
+}
+
+.cover-img{
+    width: 100%;
+    margin-bottom: 14px;
+    border-radius: 8px;
+}
+
+.profile-details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+.pd-row{
+    display: flex;
+    align-items: flex-start;
+}
+.profile-pic{
+    width: 130px;
+    border-radius: 8px;
+    margin-right: 20px;
 }
 
