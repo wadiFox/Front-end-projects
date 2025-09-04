@@ -710,7 +710,106 @@ body.dark-theme .nav-right .search-box input {
     width: 100%;
     border-radius: 8px;
     cursor: pointer;
-}    
+}  
 
+/* Responsive Design */
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    .left-sidebar, .right-sidebar, .main-content{
+        flex-basis: 100%;
+    }
+    .left-sidebar, .right-sidebar{
+        position: static;
+        margin-bottom: 20px;
+    }
+    .nav-right .search-box{
+        width: 200px;
+    }
+    .prof-container{
+        padding: 20px 5%;
+    }
+    .row-main{
+        flex-direction: column-reverse;
+    }
+    .row-main-right, .row-main-left{
+        flex-basis: 100%;
+    }
+    .nav-left ul li img{
+        width: 12px;
+        margin: 0 1px;
+        display: inline-block;
+    }
+    .nav-left ul li{
+        display: inline-block;
+    }
+    nav{
+        padding: 5px 3%;
+    }
+    .logo{
+        width: 80px;
+        margin-right: 25px;
+    }
+    .nav-right .search-box{
+        display: none;
+    }
+    .add-to-post a{
+        margin-right: 5px;
+        font-size: 10px;
+        flex-wrap: wrap;
+    }
+    .add-to-post a img{
+        width: 16px;
+        margin-right: 5px;
+    }
+    .dark-mode-btn{
+        width: 35px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 360px){
+    .story-gallery{
+        flex-wrap: wrap;
+    }
+    .story{
+        flex-basis: 27%;
+        margin-bottom: 10px;
+    }
+     .dark-mode-btn{
+        width: 25px;
+        height: 5px;
+    }
+    .dark-mode-btn span {
+        width: 12px;
+        height: 12px;
+    }
+
+    .pd-right button{
+       display: none;
+    }
+    .profile-pic{
+        width: 60px;
+        margin-right: 10px;
+    }
+    .pd-row div h3{
+        font-size: 15px;
+    }
+     .pd-row div p {
+        font-size: 10px;
+}
+.nav-right .nav-user-icon img {
+    width: 30px;
+}
+.fa-caret-down {
+    font-size: 10px;
+    margin-left: 2px;
+}
+.pd-right a img {
+    display: none;
+}
+}
 
 
