@@ -12,6 +12,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
+/* navbar */
 nav{
     display: flex;
     justify-content: space-between;
@@ -61,7 +62,7 @@ nav .search img{
     list-style: none;
     height: 100%;
 }
-.nav-center ul li{ /* Ajoutez cette nouvelle règle */
+.nav-center ul li{ 
     display: flex;
     height: 100%;
 }
@@ -73,9 +74,8 @@ nav .search img{
     flex-direction: column;
     padding: 0 20px;
     color: #5f5f5f;
-       /* border-bottom: 2px solid transparent;  Bordure transparente par défaut */
-    transition: border-color 0.2s ease; /* Transition douce */
-    position: relative; /* Nécessaire pour le pseudo-élément */
+    transition: border-color 0.2s ease; 
+    position: relative; 
 }
 .nav-center ul li a:hover{
     cursor: pointer;
@@ -130,4 +130,128 @@ nav .search img{
     width: 100%;
     transition: width 0.3s ease;
     margin-bottom: -5px;
+}
+/* end navbar */
+
+/*-------------- Main Container --------------*/
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 6%;
+}
+/* left sidebar */
+.left-sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+.left-profile-box{
+    background-color: #ffffff;;
+}
+.left-profile-info{
+    padding: 0 25px;
+}
+.left-profile-info img{
+    width: 90px;
+    border-radius: 50%;
+    margin-top: -45px;
+    background: #ffffff;
+    padding: 4px;
+}
+.left-profile-info h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+.left-profile-info h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+}
+.left-profile-info ul{
+    list-style: none;
+    margin: 20px 0;
+}
+.left-profile-info ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.left-profile-info ul li span{
+    color: #045be6;
+}
+.left-profile-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e1e1e1;
+}
+.left-profile-links a{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #5f5f5f;
+    padding: 10px 10px;
+    width: 100%;    
+    border-left: 1px solid #ccc;
+}
+.left-profile-links a:first-child{
+    border-left: none;
+}
+.left-profile-links a img{
+    width: 25px;
+    margin-right: 15px;
+}
+.sidebar-activity{
+    background: #fff;
+    margin: 12px 0;
+    padding: 5px 25px;
+}
+.sidebar-activity h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+    color: #777;
+}
+.sidebar-activity a{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #888;
+    margin: 5px 0;
+}
+.sidebar-activity a img{
+    width: 20px;
+    margin-right: 10px;
+}
+.discover-more{
+    border-top: 1px solid #ccc;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -25px;
+    margin-right: -25px;    
+}
+.discover-more a{
+    color: #045be6;
+    display: inline-block;
+    margin: 10px 0;
+}
+/* end left sidebar */
+
+
+/* main sidebar  */
+.main-content{
+    flex-basis: 47%;
+    align-self: flex-start;
+}
+
+/* end main content  */
+
+
+/* right sidebar */
+.right-sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
 }
