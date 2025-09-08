@@ -125,10 +125,10 @@ nav .search img{
     width: 0;
     height: 2px;
     background-color: #181818;
+    transition: width 0.3s ease;
 }
 .nav-center ul li a:hover::after{
     width: 100%;
-    transition: width 0.3s ease;
     margin-bottom: -5px;
 }
 /* end navbar */
@@ -146,7 +146,7 @@ nav .search img{
     align-self: flex-start;
 }
 .left-profile-box{
-    background-color: #ffffff;;
+    background-color: #ffffff;
 }
 .left-profile-info{
     padding: 0 25px;
@@ -255,3 +255,36 @@ nav .search img{
     flex-basis: 25%;
     align-self: flex-start;
 }
+.sidebar-news{
+    background: #fff;
+    padding: 10px 25px;
+    
+}
+.title-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-news img{
+    width: 20px;
+    margin: 10px 0 20px;
+} 
+.sidebar-news h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0 20px;
+}
+.span a{
+    text-decoration: none;
+    color: #045be6;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+}
+.span span{
+  font-size: 13px;  
+}
+
+
