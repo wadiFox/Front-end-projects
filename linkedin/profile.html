@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0a60794be6.js" crossorigin="anonymous"></script>
+    <title>ConnectedIn - front end projects</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- Navbar -->
+        <nav>
+            <div class="nav-left">
+                   <div class="logo">
+                     <a href="index.html"><img src="img/logo.png" alt="LinkedIn Logo"></a>
+                   </div>
+               <div class="search">
+                <img src="img/search.png" alt="Search Icon">
+                <input type="text" placeholder="Search" >  
+               </div>
+            </div>
+        <div class="nav-center">
+            <ul class="nav-links">
+                <li><a href="index.html"><img src="img/home.png" alt=""><span>Home</span></a></li>
+                <li><a href="/"><img src="img/network.png" alt=""><span>My Network</span></a></li>
+                <li><a href="/"><img src="img/jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="/"><img src="img/message.png" alt=""><span>Messaging</span></a></li>
+                <li><a href="/"><img src="img/notification.png" alt=""><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="online">
+                <img src="img/user-1.png" alt="Profile Image" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        
+         <!-- Drop Down Menu -->
+        <div class="drop" id="profile-menu">
+            <div class="drop-flex">
+                <div class="user-info">
+                     <img src="img/user-1.png" alt="Person with glasses">
+                     <div>
+                        <h3>Ouadie EL AMRANI</h3>
+                        <a href="profile.html">See your profile</a>
+                     </div>
+                </div> 
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/feedback.png" alt="feedback icon">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>   
+                <a href="#" class="profile-menu-link">
+                    <img src="img/setting.png" alt="setting icon">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>   
+                <a href="#" class="profile-menu-link">
+                    <img src="img/help.png" alt="help icon">
+                    <p>help & Support</p>
+                    <span>></span>
+                </a>   
+                <a href="#" class="profile-menu-link">
+                    <img src="img/display.png" alt="display icon">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>   
+                <a href="#" class="profile-menu-link">
+                    <img src="img/logout.png" alt="logout icon">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>   
+            </div> 
+        </div>  <!-- End Drop Down Menu -->
+        </nav><!-- end nav -->
+    </header>
+    
+
+   
+      <!-- main-container -->
+      <div class="main-container">
+
+        <!-- profile-main -->
+        <div class="profile-main">
+          <div class="profile-container">
+            <img src="img/cover-pic.png" width="100%">
+            <div class="profile-container-inner">
+                <img src="img/user-1.png" class="profile-pic">
+                <h1>Ouadie EL AMRANI</h1>
+                <b>Full-stack Developer at AMRANI Group | Ouadie Corp.</b>
+                <p>Brescia, Italy &middot; <a href="#">Contact Info</a></p>
+                <div class="mutual-connection">
+                    <img src="img/user-2.png">
+                    <span>1 mtual connection: James Bond</span>
+                </div>
+                <div class="profile-btn">
+                   <a href="#" class="primary-btn"><img src="img/connect.png">Connect</a>
+                   <a href="#"><img src="img/chat.png">Message</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="profile-description">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore, iste esse beatae facere ipsa veniam ducimus molestias possimus atque ipsam quibusdam? Laudantium dolorem consectetur, sint doloremque corrupti praesentium dolor nesciunt error hic harum excepturi blanditiis impedit consequuntur et, non itaque assumenda minima unde ipsum cupiditate. Nam voluptatum vel in.</p>
+            <a href="#" class="see-more-link">See More...</a>
+          </div>
+          <div class="profile-description">
+            <h2>Experience</h2>
+            <div class="profile-desc-row">
+                <img src="img/microsoft.png">
+                <div>
+                <h3>Lead Full-stack Developer</h3>
+                <b>Metasoft &middot; Full-time</b>
+                <b>March 2022 - Present &middot; 3 years</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore, iste esse beatae facere ipsa veniam ducimus molestias possimus atque ipsam quibusdam? Laudantium dolorem consectetur, sint doloremque corrupti praesentium dolor nesciunt error.</p>
+                <hr>
+                </div>
+            </div>
+            <div class="profile-desc-row">
+                <img src="img/slack.png">
+                <div>
+                <h3>Lead Front-End Developer</h3>
+                <b>AMRANI Group &middot; Full-time</b>
+                <b>March 2020 - Feb 2022 &middot; 2 years</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore, iste esse beatae facere ipsa veniam ducimus molestias possimus atque ipsam quibusdam? Laudantium dolorem consectetur, sint doloremque corrupti praesentium dolor nesciunt error.</p>
+                <hr>
+                </div>
+            </div>
+            <div class="profile-desc-row">
+                <img src="img/google.png">
+                <div>
+                <h3>Lead Back-End Developer</h3>
+                <b>MGoogleSoft &middot; Full-time</b>
+                <b>April 2018 - Jan 2020 &middot; 2 years</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore, iste esse beatae facere ipsa veniam ducimus molestias possimus atque ipsam quibusdam? Laudantium dolorem consectetur, sint doloremque corrupti praesentium dolor nesciunt error.</p>
+                </div>
+            </div>
+            <hr>
+            <a href="#" class="experience-link">Show All Experiences <img src="img/right-arrow.png" alt=""></a>
+
+          </div>
+        </div><!-- End profile-main -->
+        
+        <!-- profile-sidebar -->
+        <div class="profile-sidebar">
+
+        </div><!-- End profile-sidebar -->
+      </div><!-- End main-container -->
+    
+
+    
+    
+<script>
+    let profile_menu = document.getElementById("profile-menu");
+
+    function toggleMenu(){
+        profile_menu.classList.toggle("open-menu");
+    };
+</script>    
+</body>
+</html>
